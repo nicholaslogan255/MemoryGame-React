@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Scorebar from "./scorebar";
+import Photo from "./photo";
 
 
 class PageContainer extends Component {
@@ -13,7 +14,7 @@ class PageContainer extends Component {
 
     }
 
-    // change the state whenever the input field changes
+    // change the state whenever the 
     handleInputChange = event => {
         const name = event.target.name;
         const value = event.target.value;
@@ -21,13 +22,6 @@ class PageContainer extends Component {
             [name]: value
         });
     };
-
-    // When the form is submitted, search the dog API for `this.state.search`
-    handleFormSubmit = event => {
-        event.preventDefault();
-        this.searchDog(this.state.search);
-    };
-
 
     // load the page with the SearchForm and the ResultList components
     render() {
@@ -49,6 +43,24 @@ class PageContainer extends Component {
                     curscore={this.state.cur_score}
                     highscore={this.state.high_score}
                 />
+
+                <div class="photo-container">
+
+                <Photo />
+                <Photo photo_url="../assets/steven"/>
+                <Photo photo_url="../assets/steven"/>
+                <Photo photo_url="../assets/steven"/>
+                <Photo photo_url="../assets/steven"/>
+                <Photo photo_url="../assets/steven"/>
+                <Photo photo_url="../assets/steven"/>
+                <Photo photo_url="../assets/steven"/>
+                <Photo photo_url="../assets/steven"/>
+                  
+                </div>
+
+
+
+
             </div>
         );
     }

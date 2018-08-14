@@ -27,7 +27,7 @@ body {
 }
 
 .App-description{
-  width: 1000px;
+  width: 1100px;
 }
 
 #scorebar{
@@ -38,4 +38,19 @@ body {
   position: fixed; 
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+}
+
+.photo-container{
+  padding-left: 40px;
+  width: 1100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo{
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+
 }
