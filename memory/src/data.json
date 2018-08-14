@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "image": "./assets/images/amethyst.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "./assets/images/connie.png",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "./assets/images/garnet.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "./assets/images/greg.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "./assets/images/lapis.png",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "./assets/images/pearl.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "./assets/images/peridot.png",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "./assets/images/rose.png",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "./assets/images/steven.png",
+    "clicked": false
+  }
+ 
+]
