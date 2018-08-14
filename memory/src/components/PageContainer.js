@@ -4,6 +4,8 @@ import Photo from "./photo";
 import data from "../data.json";
 
 
+
+
 class PageContainer extends Component {
     state = {
         data,
@@ -33,8 +35,6 @@ class PageContainer extends Component {
     findObject = (id) => {
        // console.log("Finding id: ",id);
         const mydata = this.state.data;
-
-        //console.log("Our data:",this.state.data);
 
         // loop through every object, look for matching ids
         for(let i = 0; i < this.state.data.length; i++){
@@ -69,6 +69,8 @@ class PageContainer extends Component {
         this.setState({stateCopy});
     };
 
+
+    // mix up the 
     shuffleData = () => {
 
         let stateCopy = this.state;
@@ -108,7 +110,7 @@ class PageContainer extends Component {
     if(this.findObject(id).clicked){
         console.log("Already Clicked")
 
-        // if it has already been clicked on, reset the game
+        // if photo has already been clicked on, reset the game
 
         // TODO: ADD MODAL
         alert("You already clicked that!");
@@ -116,6 +118,7 @@ class PageContainer extends Component {
         // reset score to zero
         stateCopy.cur_score =0;
 
+        // clear 
         this.resetData();
 
         // set state with the new info
