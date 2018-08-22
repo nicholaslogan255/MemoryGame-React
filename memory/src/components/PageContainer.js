@@ -3,9 +3,6 @@ import Scorebar from "./scorebar";
 import Photo from "./photo";
 import data from "../data.json";
 
-
-
-
 class PageContainer extends Component {
     state = {
         data,
@@ -70,18 +67,19 @@ class PageContainer extends Component {
     };
 
 
-    // mix up the 
+    // mix up the position of the photo objects
     shuffleData = () => {
 
         let stateCopy = this.state;
         let len = stateCopy.data.length
 
 
+        // the indexs of the two randomly selectd objects
         let i;
         let j;
 
         // Perform 2n swaps on the object array (n= number of elements to choose from) 
-        for( let x = len*2; x>0; x--){
+        for( let x = len*3; x>0; x--){
             // pick two random elements
             i = Math.floor(Math.random() *len);
             j = Math.floor(Math.random() * len);

@@ -33,7 +33,7 @@ body {
 #scorebar{
  
   background-color: rgb(161, 74, 243);
-  height: 2em;
+  height: 3em;
   color: white;
   position: fixed; 
   top: 0; /* Position the navbar at the top of the page */
